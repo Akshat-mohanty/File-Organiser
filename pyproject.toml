@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-organizer-cli"
+version = "0.1.0"
+authors = [
+  { name="Akshat Mohanty" }
+]
+description = "A CLI tool to organize and rename files using Click"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "click",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+file-mgr = "file_organizer.cli:cli"
